@@ -21,8 +21,8 @@
             {% endif %}
             <form action="{% url 'connexion' %}" method="post" class="item-form">
                 {% csrf_token %}
-                <input type="text" name="username" placeholder="name" id="">
-                <input type="text" name="password" placeholder="password" id="">
+                <input type="text" name="username" placeholder="Email" id="" style="margin-bottom: 30px;">
+                <input type="text" name="password" placeholder="Mot de passe" id="" style="margin-bottom: 50px;">
                 <button type="submit" style="padding: 10px 20px;background-color: #07a35a;border: none;border: 10px;color: white;">Se connecter</button>
             </form>
             <p class="olink">pas encore inscrit! <a href="{% url 'inscription' %}">S'inscrire</a></p>

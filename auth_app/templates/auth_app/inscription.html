@@ -23,8 +23,14 @@
             <form action="{% url 'inscription' %}" method="post" class="item-form">
                 {% csrf_token %}
                 <H1>Votre inscription</H1>
+
                 {{ form.as_p }}
-                <button type="submit" style="padding: 10px 20px;background-color: #07a35a;border: none;border: 10px;color: white;">je m'inscrit</button>
+                <style>
+                    .helptext {
+                        display: none;
+                    }
+                </style>
+                <button type="submit" style="padding: 10px 20px;background-color: #07a35a;border: none;border: 10px;color: white;margin-top: 20px;">je m'inscrit</button>
             </form>
             <p class="olink">Deja inscrit! <a href="{% url 'connexion' %}">je veux me connecter !</a></p>
         </div>

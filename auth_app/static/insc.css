@@ -4,17 +4,25 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-  }
-  body {
-      width: 100%;
-      overflow: hidden;
-      background-color: #07a35a;
-  }
-
+}
+body {
+    width: 100%;
+    overflow: hidden;
+    background-color: #07a35a;
+}
+.helptext {
+    visibility: hidden;
+    display: none;
+}
   label{
     color: #07a35a;
-  }
-  @media (min-width:700px) and (max-width:3000px){
+}
+@media (min-width:700px) and (max-width:3000px){
+    form.item-form .helptext {
+        padding: 15px 20px ;
+        background-color: blueviolet;
+        display: none;
+    }
     body {
         width: 100%;
         overflow: hidden;
@@ -320,6 +328,11 @@
   }
    */
 @media (min-width:10px) and (max-width:700px){
+    form.item-form .helptext {
+        padding: 15px 20px ;
+        background-color: blueviolet;
+        display: none;
+    }
     body {
         width: 100%;
         overflow: hidden;

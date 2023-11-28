@@ -7,7 +7,6 @@ class AuthUser(UserCreationForm):
         label="entrer un e-mail",
         required=True,
         widget=forms.TextInput(attrs={'autocomplete': 'email'}),
-        #help_text="Required. 150 characters or fewer. Lettersand @/./+/-/_ only.",
     )
     password1 = forms.CharField(
         label="entrer un mot de passe",
