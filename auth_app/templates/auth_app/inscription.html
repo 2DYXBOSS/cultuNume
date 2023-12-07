@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'insc.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lobster&family=Poppins:wght@200&family=Rowdies:wght@700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -20,10 +23,13 @@
                 {% endfor %}
             </div>
             {% endif %}
+            <a href="/">
+                <strong><p style="color:  rgba(117, 204, 124, 0.555);"><span style="font-size: 3rem;color: rgb(40, 90, 16);">B</span>lay Dream</p></strong>
+            </a>
             <form action="{% url 'inscription' %}" method="post" class="item-form">
-                {% csrf_token %}
-                <H1>Votre inscription</H1>
 
+                {% csrf_token %}
+                <p>Inscrivez - vous</p>
                 {{ form.as_p }}
                 <style>
                     .helptext {

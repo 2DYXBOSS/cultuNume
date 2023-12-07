@@ -30,6 +30,7 @@ DEBUG = os.environ.get("DEBUG",True)
 ALLOWED_HOSTS = [".onrender.com"]
 
 
+
 # Application definition
 
 INSTALLED_APPS = [

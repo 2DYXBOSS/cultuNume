@@ -1,14 +1,82 @@
+
+
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Acceuil - Blay Dream</title>
+    <link rel="shortcut icon" href="static/IMAGES/blaye.jpeg">    
+    <link rel="stylesheet" href="{% static 'page.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lobster&family=Poppins:wght@200&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <h1> vous etre connecter</h1>
-    <button>
-        <a href="{% url 'deconnexion' %}">deconnexion</a>
-    </button>
+    <div class="fixe">
+        <div class="lofo" >
+            <a href="/">
+                <strong><p style="color:  rgba(117, 204, 124, 0.555);"><span style="font-size: 3rem;color: rgb(40, 90, 16);">B</span>lay Dream</p></strong>
+            </a>
+        </div>
+        <div class="lofo1">
+            <nav>
+                <ul>
+                    
+                    <!-- <li>
+                        <a href="">Nos produits</a>
+                    </li>
+                    <li>
+                        <a href="">Qui sommes nous ?</a>
+                    </li> -->
+                    <li>
+                        <!-- <a style="padding: 15px 20px;background-color: white;color: rgb(40, 90, 16);;border-radius: 10px;" href="*155*1*1*0102330470#">Mon compte</a> -->
+                        <a style="padding: 15px 20px;background-color: white;color: rgb(40, 90, 16);;border-radius: 10px;" href="/profile">Home</a>
+                        
+                    </li>
+                    <li>
+                        <!-- <a style="padding: 15px 20px;background-color: white;color: rgb(40, 90, 16);;border-radius: 10px;" href="*155*1*1*0102330470#">Mon compte</a> -->
+                        <a style="padding: 15px 20px;background-color: white;color: rgb(40, 90, 16);;border-radius: 10px;" href="/profile">Services</a>
+                        
+                    </li>
+                    <li>
+                        <!-- <a style="padding: 15px 20px;background-color: white;color: rgb(40, 90, 16);;border-radius: 10px;" href="*155*1*1*0102330470#">Mon compte</a> -->
+                        <a style="padding: 15px 20px;background-color: white;color: rgb(40, 90, 16);;border-radius: 10px;" href="/profile">A propos</a>
+                        
+                    </li>
+                   
+                    
+                    <li>
+                        <!-- <a style="padding: 15px 20px;background-color: white;color: rgb(40, 90, 16);;border-radius: 10px;" href="*155*1*1*0102330470#">Mon compte</a> -->
+                        <a style="padding: 15px 20px;background-color: white;color: rgb(40, 90, 16);;border-radius: 10px;" href="{% url 'deconnexion' %}">Deconnection</a>
+                        
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <div class="hre">
+        <div class="retyu1">
+            
+
+            <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: bolder;font-size: 3rem;">BIENVENUE</h1>
+            <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: bolder;font-size: 3rem;">VOUS ETES CONNECTER</h1>
+            <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: bolder;color: rgb(40, 90, 16);;padding-bottom: 20px;font-size: 3rem;">ADMIREZ</h1>
+            <p style="color: rgb(116, 116, 116);margin-bottom: 50px;">Nous sommes là pour vous et à tout moment, BLAY DREAM pour la decouverte d'un montre plein naturelle</p>
+            <!-- <img src="('static', filename='image/desfe.jpg')" height="250px" width="70%"   alt="" > -->
+            <a  href="{% url 'deconnexion' %}">DECONNECTION</a>
+        </div>
+        <div class="retyu2">
+            <img src="{% static 'image/desfe.jpg' %}" height="450px" width="90%" alt="" >
+        </div>
+        <!-- <a style="padding: 25px 25px;background-color: white;color: rgb(140, 58, 216);border-radius: 5px;border: 1px solid rgb(140, 58, 216);" href="">INSCRIPTION</a>
+        <a style="padding: 25px 25px;background-color: white;color: rgb(140, 58, 216);border-radius: 5px;border: 1px solid rgb(140, 58, 216)" href="">CONNEXION</a> -->
+
+    </div>
+
+    <p style="text-align: center;padding-bottom: 30px;" id="intr">Deconnectez vous , y'a rien d'autres en bas ici pour le moment merci !</p>
 </body>
 </html>
